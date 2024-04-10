@@ -1,16 +1,17 @@
 void main() {
   final diaDaSemana = 3;
-  var UhomemMacaco = '';
+  var uhomemMacaco = '';
 
   switch (diaDaSemana) {
     case 1:
     case 2:
-      UhomemMacaco = 'Domingo';
+      uhomemMacaco = 'Domingo';
       print('Dia triste!!');
       break;
     default:
-      UhomemMacaco = 'Segunda';
+      uhomemMacaco = 'Segunda';
       print('correu atrás de mim');
       break;
   }
+  print(uhomemMacaco);
 }
