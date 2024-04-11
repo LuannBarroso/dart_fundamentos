@@ -6,4 +6,12 @@ void main() {
 
   final nomes = ['maria', 'joao', 'carlos', 'luan'];
   nomes.add('luana');
+  print(nomes);
+  print(nomes[0]);
+  print(nomes[1]);
+  print(nomes[2]);
+  print(nomes[3]);
+  print('adicionando frabricio na lista');
+  nomes.insert(2, 'fabricio');
+  print(nomes);
 }
