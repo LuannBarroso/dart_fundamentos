@@ -25,4 +25,14 @@ void main() {
   var listaNumerosSpreadB = [4, 5, 6];
   var listaNumerosSpread = [1, 2, 3, ...listaNumerosSpreadB];
   print(listaNumerosSpread);
+
+  //Collection if
+  var promocaoAtiva = true;
+
+  var produtos = [
+    'Cerveja',
+    'Refrigerante',
+    if (promocaoAtiva) 'Suco de Laranja'
+  ];
+  print(produtos);
 }
