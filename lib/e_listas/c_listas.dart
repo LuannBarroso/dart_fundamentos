@@ -7,7 +7,7 @@ void main() {
   print(nomes[3]);
   print(nomes);
   print('Escolhenho primeiro nome');
-  print(nomes.last);
+  // print(nomes.last);
 
   var primeiroNome = nomes.firstWhere((nomes) => nomes == 'maria');
   print(primeiroNome);
