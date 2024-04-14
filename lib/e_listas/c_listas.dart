@@ -13,7 +13,7 @@ void main() {
 
   // aqui utilizando o fistWhere chamamos o primeiro item da lista, que no caso seria o nome ou numero.
   var primeiroNome = nomes.firstWhere((nomes) => nomes == 'maria');
-  print(primeiroNome);
+  print('Nome é $primeiroNome');
 
   final numerosGerados = List.generate(10, (index) => index + 1);
   print(numerosGerados);
