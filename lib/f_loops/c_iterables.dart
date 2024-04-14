@@ -4,4 +4,5 @@ void main() {
 //depois realizado um looping e printou oq precisava ser printado.
   numeros.where((numero) => numero != 5).forEach((numero) => print(numero));
   //print(numeros);
+  //print
 }
