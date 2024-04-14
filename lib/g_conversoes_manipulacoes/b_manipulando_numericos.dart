@@ -9,4 +9,7 @@ void main() {
   if (valorInt2 != null) {
     print('O valor da comida é ${valorInt2 + 2}');
   }
+
+  final precoDaCamisa = 30.27876;
+  print(precoDaCamisa.toStringAsFixed(2));
 }
