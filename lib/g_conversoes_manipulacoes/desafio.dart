@@ -13,13 +13,62 @@ void main() {
   ];
   //! Baseado no array acima monte um relatório onde:
   //! 1 - Apresente os pacientes com mais de 20 anos e print o nome deles
+  print('');
   print('1 - Apresente os pacientes com mais de 20 anos e print o nome deles');
-  for (final paciente in pacientes) {
+  for (var paciente in pacientes) {
     final pacienteDados = paciente.split('|');
     final idade = int.tryParse(pacienteDados[1]) ?? 0;
     if (idade > 20) {
       print(pacienteDados[0]);
     }
   }
-  print(' ');
+
+  //! 2 - Apresente quantos pacientes existem para cada profissão (desenvolvedor, estudante, dentista, jornalista)
+  print('');
+  print(
+      '2 - Apresente quantos pacientes existem para cada profissão (desenvolvedor, estudante, dentista, jornalista');
+  final desenvolvedores = [];
+  final estudantes = [];
+  final dentistas = [];
+  final jornalistas = [];
+
+  for (final paciente in pacientes) {
+    final pacienteDados = paciente.split('|');
+    final nome = pacienteDados[0];
+    final profissao = pacienteDados[2].toLowerCase();
+
+    if (profissao == 'desenvolvedor') {
+      desenvolvedores.add(nome);
+    }
+    if (profissao == 'estudante') {
+      estudantes.add(nome);
+    }
+    if (profissao == 'dentista') {
+      dentistas.add(nome);
+    }
+    if (profissao == 'jornalista') {
+      jornalistas.add(nome);
+    }
+  }
+
+  print('desenvolvedores:');
+  desenvolvedores.forEach(print);
+  print('estudantes:');
+  estudantes.forEach(print);
+  print('dentistas:');
+  dentistas.forEach(print);
+  print('jornalistas:');
+  jornalistas.forEach(print);
+
+  //! 3 - Apresente a quantidade de pacientes que moram em SP
+  print('');
+  print('3 - Apresente a quantidade de pacientes que moram em SP');
+  for (var paciente in pacientes) {
+    final pacienteDados = paciente.split('|');
+    final estado = pacienteDados[3].toLowerCase();
+
+    if (estado == 'sp') {
+      print(pacienteDados[0]);
+    }
+  }
 }
