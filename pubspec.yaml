@@ -1,7 +1,7 @@
-name: dart_fundamentos
-description: Projeto referente ao curso de dart_fundamentos da academia do flutter
+name: dart_funcoes_colecoes
+description: Mudulo da cademia do flutter de funcoes e colecoes
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/LuannBarroso?tab=repositories
 
 environment:
   sdk: ^3.3.3
